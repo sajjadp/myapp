@@ -1,7 +1,7 @@
 pipeline{
     agent any
 
-    enviorment {
+    environment {
         DOCKERHUB_CREDENTIALS=credentials('sajjad-docker-login')
     }
 
