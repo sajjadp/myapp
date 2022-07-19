@@ -1,5 +1,5 @@
 pipeline{
-    select any
+    agent any
 
     stages{
 
