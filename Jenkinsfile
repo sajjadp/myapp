@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent {label 'ubuntu'}
 
     environment {
         DOCKERHUB_CREDENTIALS=credentials('sajjad-docker-login')
