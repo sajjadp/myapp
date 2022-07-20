@@ -6,14 +6,7 @@ pipeline{
     }
 
     stages{
-
-        stage("gitclone") {
-
-            steps {
-                echo 'git clone the application' 
-                git clone 'https://github.com/sajjadp/myapp.git'
-            }
-        }
+        
         stage("build") {
             steps {
                 echo 'docker image building'
