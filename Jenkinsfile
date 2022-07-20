@@ -6,7 +6,7 @@ pipeline{
     }
 
     stages{
-        
+
         stage("build") {
             steps {
                 echo 'docker image building'
@@ -26,6 +26,13 @@ pipeline{
                 sh 'docker push sajjadp/newapp:latest'
             }
         }
+        stage ('run docker app') {
+            steps {
+                echo 'runnnig the docker app'
+                sh ' docker run -d -p 8080:8080 sajjadp/newapp'
+            }
+        }
+        
     }
     post {
         always{
