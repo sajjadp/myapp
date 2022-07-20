@@ -11,7 +11,7 @@ pipeline{
 
             steps {
                 echo 'git clone the application' 
-                git 'https://github.com/sajjadp/myapp.git'
+                git clone 'https://github.com/sajjadp/myapp.git'
             }
         }
         stage("build") {
