@@ -29,7 +29,7 @@ pipeline{
         stage ('run docker app') {
             steps {
                 echo 'runnnig the docker app'
-                sh ' docker run -d sajjadp/newapp'
+                sh ' docker run -d -p 8083:8080 sajjadp/newapp'
             }
         }
 
